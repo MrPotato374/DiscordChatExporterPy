@@ -175,7 +175,7 @@ class Transcript:
         else:
             guild_icon = self.guild.icon
 
-        if not guild_icon or len(guild_icon) < 2:
+        if not guild_icon:
             guild_icon = "https://cdn.jsdelivr.net/gh/mahtoid/DiscordUtils@master/discord-default.png"
 
         guild_name = html.escape(self.guild.name)
